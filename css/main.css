@@ -98,6 +98,9 @@ table:last-child {
 tr.header {
     cursor:pointer;
 }
+th {
+    text-align: center;
+}
 
 /* Mobile first queries */
 

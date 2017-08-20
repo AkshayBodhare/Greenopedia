@@ -16,5 +16,3 @@ $(document).ready(function(){
     
     });
 });
-
-// div.row>(div.one-third.column.tree#>img+table>(thead>tr.header.expand>th[scope="row"]+td)+(tbody>((tr>th[scope="row"]+td)*7+tr>td[colspan="2"])))*3
