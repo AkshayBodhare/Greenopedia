@@ -22,16 +22,13 @@ a:hover {
 /* Primary Header */
 
 .logo {
-    font-size: 48px;
-    font-weight: 300;
-    letter-spacing: .5px;
-    line-height: 44px;
-    padding: 0 0 22px 0;
+    padding: 0 0 11px 0;
     text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
 }
 .tagline {
-    margin: 66px 0 22px 0;
-    text-align: right;
+    text-align: center;
 }
 .primary-nav {
     font-size: 14px;
@@ -47,22 +44,20 @@ a:hover {
     padding-bottom: 44px;
     padding-top: 44px;
 }
-.primary-footer small {
+footer small {
     font-weight: 400;
+    display: block;
+    margin: 0 auto;
 }
 
 /* Navigation */
 
 .nav {
-    text-align: right;
+    text-align: center;
 }
 .nav li {
-    display: inline-block;
+    display: block;
     margin: 0 10px;
-    vertical-align: top;
-}
-.nav li:last-child {
-    margin-right: 0;
 }
 
 /* Hero */
@@ -71,4 +66,44 @@ a:hover {
     line-height: 24px;
     padding: 22px 80px 66px 80px;
     text-align: center;
+}
+
+/* For overflowing text */
+
+.text-overflow-center {
+    margin-left: -100%;
+    margin-right: -100%;
+    text-align: center;
+}
+
+/* Mobile first queries */
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+    .logo {
+        font-size: 48px;
+        letter-spacing: .5px;
+        line-height: 44px;
+        text-align: left;
+        padding: 0 0 22px 0;
+        float: left;
+    }
+    .tagline {
+        margin: 66px 0 22px 0;
+        text-align: right;
+    }
+    .nav {
+        text-align: right;
+    }
+    .nav li {
+        display: inline-block;
+        vertical-align: top;
+    }
+    .nav li:last-child {
+        margin-right: 0;
+    }
+    footer small {
+        float: left;
+        text-align: left;
+    }
 }
