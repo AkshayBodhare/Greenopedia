@@ -43,6 +43,7 @@ a:hover {
     font-size: 14px;
     padding-bottom: 44px;
     padding-top: 44px;
+    margin-top: 44px;
 }
 footer small {
     font-weight: 400;
@@ -76,6 +77,28 @@ footer small {
     text-align: center;
 }
 
+/* tree calalog */
+
+.tree {
+    border: 1px solid #b1b1b1;
+    border-radius: 5px;
+    margin-top: 88px;
+    padding: 10px 10px 22px 10px;
+    text-align: center;
+}
+.tree img {
+    border-radius: 50%;
+    height: 130px;
+    margin: -66px 0 22px 0;
+    vertical-align: top;
+}
+table:last-child {
+    margin-bottom: 0;
+}
+tr.header {
+    cursor:pointer;
+}
+
 /* Mobile first queries */
 
 /* Larger than phablet */
@@ -105,5 +128,11 @@ footer small {
     footer small {
         float: left;
         text-align: left;
+    }
+    .primary-footer {
+        border-top: 1px solid #b1b1b1;
+    }
+    .hero {
+        border-bottom: 1px solid #b1b1b1;
     }
 }
